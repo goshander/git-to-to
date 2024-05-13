@@ -1,12 +1,12 @@
 import * as fs from 'fs'
 
-import { clone, push } from 'isomorphic-git'
-import http from 'isomorphic-git/http/node'
-
 import type { GitCredentials, PullProvider, PutProvider } from '../types'
 
 const Provider: PutProvider & PullProvider = {
   async put(dir, destination, auth) {
+    const {push} = await import('isomorphic-git')
+    const http = await import('isomorphic-git/http/node')
+
     await push({
       fs,
       http,
@@ -21,6 +21,9 @@ const Provider: PutProvider & PullProvider = {
     })
   },
   async pull(dir, source, auth) {
+    const {clone} = await import('isomorphic-git')
+    const http = await import('isomorphic-git/http/node')
+
     await clone({
       fs,
       http,
