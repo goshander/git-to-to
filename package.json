@@ -1,6 +1,6 @@
 {
   "name": "git-to-to",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Git repositories auto backup utility",
   "author": {
     "name": "Georgy Malkov",
