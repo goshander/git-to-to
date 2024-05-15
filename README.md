@@ -25,7 +25,7 @@ await gitToTo({
           destination: 'https://gitlab.com/test/test.git',
         },
         {
-          auth: 'yc',
+          auth: 's3',
           destination: 'backup/test',
           provider: PROVIDER.S3,
         },
