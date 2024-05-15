@@ -1,4 +1,4 @@
-# git-to-to
+# 🚅 git-to-to
 
 Git repositories auto backup utility
 
