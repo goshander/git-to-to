@@ -68,6 +68,8 @@ export type GitToToOptions = {
   auth: {
     [key: string]: Auth
   }
+  pool?: number
+  parallel?: boolean
 }
 
 export type MirrorOptions = {
@@ -77,4 +79,5 @@ export type MirrorOptions = {
     [key: string]: Auth
   }
   log: BaseLogger
+  parallel?: boolean
 }

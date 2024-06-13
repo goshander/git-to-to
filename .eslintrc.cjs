@@ -21,7 +21,6 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:promise/recommended',
     'plugin:jsonc/recommended-with-jsonc',
-    'plugin:jsonc/recommended-with-jsonc',
   ],
   parser: '@typescript-eslint/parser',
   rules: {

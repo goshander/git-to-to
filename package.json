@@ -1,6 +1,6 @@
 {
   "name": "git-to-to",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Git repositories auto backup utility",
   "author": {
     "name": "Georgy Malkov",
@@ -19,6 +19,7 @@
     "build": "rm -rf ./dist && tsc -p tsconfig.json"
   },
   "dependencies": {
+    "@supercharge/promise-pool": "^3.2.0",
     "archiver": "^6.0.2",
     "axios": "^1.6.8",
     "dotenv": "^16.4.0",
@@ -29,8 +30,8 @@
   "devDependencies": {
     "@types/archiver": "^6.0.2",
     "@types/node": "^20.12.0",
-    "@typescript-eslint/eslint-plugin": "7.4.0",
-    "@typescript-eslint/parser": "7.4.0",
+    "@typescript-eslint/eslint-plugin": "7.13.0",
+    "@typescript-eslint/parser": "7.13.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-import-resolver-typescript": "3.6.1",

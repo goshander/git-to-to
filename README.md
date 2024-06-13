@@ -54,5 +54,7 @@ await gitToTo({
       }
     },
   },
+  parallel: true,
+  pool: 4,
 });
 ```
